@@ -3,4 +3,4 @@ install:
 
 test:
 	cd ./source && python manage.py test 
-	pipenv run pytest source/test_django_heroku.py
+	pipenv run pytest source/test_deploy.py
