@@ -1,1 +1,5 @@
-django==2.2.2
+Django==2.2.2
+pkg-resources==0.0.0
+pytz==2019.1
+sqlparse==0.3.0
+whitenoise==4.1.2
