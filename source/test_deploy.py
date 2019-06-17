@@ -4,7 +4,7 @@ import imp
 
 import pytest
 
-import testproject.settings as config
+import server.settings as config
     
 def test_staticfiles():
     imp.reload(config)
