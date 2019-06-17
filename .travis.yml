@@ -7,7 +7,3 @@ install:
   - make install
 script:
   - make test
-deploy:
-  provider: heroku
-  api_key: ...
-  app: t5-pso
