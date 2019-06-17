@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+            th,
+            td {
+                border: 3px solid black;
+            }
+        </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Produtos</h1>
+    <table>
+        <tr>
+            <th>Nome:</th>
+            <th>Preço:</th>
+            <th>Descrição:</th>
+        </tr>
+        {% for produto in produtos %}
+        <tr>
+            <td>{{ produto.nome }}</td>
+            <td>{{ produto.preco }}</td>
+            <td>{{ produto.descricao }}</td>
+        </tr>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

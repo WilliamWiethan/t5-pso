@@ -1,5 +1,4 @@
 .idea
-source/db.sqlite3
 arquivo-server
 .vscode/
 *.pyc
