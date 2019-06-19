@@ -12,7 +12,7 @@ class HomePageTests(TestCase):
         self.assertEquals(response.status_code, 200)
 
     def test_view_url_by_name(self):
-        response = self.client.get(reverse('/'))
+        response = self.client.get(reverse(''))
         self.assertEquals(response.status_code, 200)
 
     def test_home_page_contains_correct_html(self):
