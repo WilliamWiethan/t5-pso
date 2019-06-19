@@ -12,13 +12,8 @@ class HomePageTests(TestCase):
         self.assertEquals(response.status_code, 200)
 
     def test_view_url_by_name(self):
-        response = self.client.get(reverse('produtos'))
+        response = self.client.get(reverse('/'))
         self.assertEquals(response.status_code, 200)
-
-    def test_view_uses_correct_template(self):
-        response = self.client.get(reverse('produtos'))
-        self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'produtos.html')
 
     def test_home_page_contains_correct_html(self):
         response = self.client.get('/')

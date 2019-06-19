@@ -19,6 +19,5 @@ def test_allowed_hosts():
 def test_produtos():
     assert testProd.HomePageTests.test_home_page_status_code == 200
     assert testProd.HomePageTests.test_view_url_by_name == 200
-    assert testProd.HomePageTests.test_view_uses_correct_template == 200
     assert testProd.HomePageTests.test_home_page_contains_correct_html
     assert testProd.HomePageTests.test_home_page_does_not_contain_incorrect_html
