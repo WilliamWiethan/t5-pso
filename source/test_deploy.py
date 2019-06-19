@@ -5,7 +5,6 @@ import os
 import pytest
 
 import server.settings as config
-import produtos.tests as testProd
     
 def test_staticfiles():
     #imp.reload(config)
